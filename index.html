@@ -49,6 +49,16 @@
 		    }
 		`
 		
+		function makeGitterChatbox (profile) {
+		  return bel`
+		    <div class=${css1.chatbox}>
+		<img src="${profile.photo}" class=${css1.photo1}>
+		      <h1> ${profile.name} </h1>
+		      <iframe class=${css1.iframe} src=${makeGitterURL(profile.username)}></iframe>
+		    </div>
+		  `
+		}
+		
   
 	        //difference from the repo of makeGitterChatbox https://github.com/kiecoo/makeGitterChatbox/blob/master/index.html
 		//var x = makeGitterChatbox(exampleProfile)
