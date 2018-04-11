@@ -1,6 +1,6 @@
-//module.exports = gitterChat
+
 module.exports = makeGitterURL
-module.exports = exampleProfile
+
 
 function makeGitterURL (username) {
   return `https://gitter.im/${username}/~embed`
